@@ -2,7 +2,7 @@ export function Header() {
     return (
         <header className="fixed top-0 w-full bg-white shadow-md z-50">
            <nav className="max-w-7xl mx-auto px-4 py-8 flex justify-between items-center">
-            <h1 className="text-2xl font-bold text-gray-800">AriDev</h1>
+            <span className="text-2xl font-bold text-gray-800">AriDev</span>
             
             <ul className="flex gap-6">
                 <li><a href="#inicio" className="hover:text-blue-600">Inicio</a></li>
