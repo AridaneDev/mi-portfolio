@@ -1,3 +1,4 @@
+import fotoPerfil from '../../assets/foto-animada.png'
 export function Hero () {
     return (
         <section className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-teal-900 flex items-center justify-center px4">
@@ -26,7 +27,33 @@ export function Hero () {
                     </a>
 
                 </div>
-            </div>
+
+                <div className="flex gap-4">
+                    <a 
+                    href="#proyectos"
+                    className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                    >
+                    Ver Proyectos
+                    </a>
+                    <a 
+                    href="#"
+                    className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors" 
+                    >
+                    Descargar CV
+                    </a>
+                </div>
+                </div>
+
+                <div className="flex justify-center">
+                    <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-cyan-400 to-purple-500 p-1 ">
+                        <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center text-6xl">
+                            <img src={fotoPerfil} 
+                            alt="Aridane García" 
+                            className='w-full h-full rounded-full object-cover'
+                            />
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     )
