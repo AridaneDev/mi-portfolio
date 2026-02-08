@@ -9,7 +9,7 @@
 
 ### 🏗️ Estado del proyecto:
 - [x] Configuración inicial y entorno de desarrollo.
-- [ ] Maquetación de la sección principal (Hero).
+- [x] Maquetación de la sección principal (Hero).
 - [ ] Integración de proyectos de GitHub.
 - [ ] Formulario de contacto.
 
