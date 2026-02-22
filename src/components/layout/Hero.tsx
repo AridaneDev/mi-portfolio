@@ -1,4 +1,4 @@
-import fotoPerfil from '../../assets/foto-animada.png'
+import fotoPerfil from '../../assets/foto-perfil.png'
 export function Hero () {
     return (
         <section className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-teal-900 flex items-center justify-center px4">

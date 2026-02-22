@@ -10,8 +10,26 @@ export function Projects() {
                     <ProyectCard
                     titulo="Mi Portfolio"
                     descripcion="Portfolio personal creado con React, TypeScript y Tailwind CSS."
-                    imagen="https://via.placeholder.com/400x300"
+                    imagen="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop"
                     tecnologias={["React", "TypeScript", "Tailwind"]}
+                    />
+
+                    <ProyectCard 
+                    titulo="SaaS Landing Page"
+                    descripcion="Landing page moderna con animaciones, CMS headless y optimización SEO"
+                    imagen="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
+                    tecnologias={["Next.js", "TypeScript", "Tailwind", "Prisma"]}
+                    linkDemo="#"
+                    linkCodigo="#"
+          />
+
+                     <ProyectCard
+                    titulo="Task Management App"
+                    descripcion="Aplicación de gestión de proyectos estilo Trello con drag & drop y colaboración en tiempo real."
+                    imagen="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop"
+                    tecnologias={["React", "TypeScript", "Tailwind", "Supabase"]}
+                    linkDemo="#"
+                    linkCodigo="#"
                     />
                 </div>
             </div>
