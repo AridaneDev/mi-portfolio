@@ -14,14 +14,14 @@ return (
         <img
             src={imagen}
             alt={titulo}
-            className="w-full h-48 object-cover"
+            className="w-full h-48 object-cover p-3"
         />
 
         <div className="p-6">
             <h3 className="text-xl font-bold text-gray-800 mb-2">{titulo}</h3>
-            <p className="text-gray-600 mb-4">{descripcion}</p>
+            <p className="text-gray-900 mb-4">{descripcion}</p>
         </div>
-        <div className="flex flex-wrap mb-4">
+        <div className="flex flex-wrap justify-center gap-2 mb-4">
             {tecnologias.map((tech) => (
                 <span 
                     key={tech}

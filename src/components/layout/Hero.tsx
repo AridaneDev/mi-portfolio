@@ -1,32 +1,19 @@
+import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import fotoPerfil from '../../assets/foto-perfil.png'
+
 export function Hero () {
     return (
         <section className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-teal-900 flex items-center justify-center px4">
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-                <div className="text-white space-y-6">
+                <div className="text-white space-y-9">
                 <div>
                     <h1 className="text-5xl md:text-6xl font-bold">
-                        ¡Hola! Soy <span className="text-cyan-400">Aridane García</span>
+                        Hola, mi nombre es <span className="text-cyan-400">Aridane García</span>
                     </h1>
-                    <p className="text-xl md:text-2xl text-purple-300 mt-2">Desarrollador Web 💻</p>
                 </div>
-                <p className="text-lg text-gray-300">
-                   Especializado en React, TypeScript y Tailwind CSS, 
-            enfocado en crear interfaces modernas y experiencias de usuario intuitivas. 
+                <p className="text-2xl text-gray-300">
+                   Soy un desarrollador de software que actualmente reside en las Islas Canarias, España.
                 </p>
-
-                <div className="flex gap-4 text-2xl">
-                    <a href="#" className="hover:text-cyan-400 transition-colors">
-                        GitHub
-                    </a>
-                    <a href="#" className="hover:text-cyan-400 transition-colors">
-                        Email
-                    </a>
-                    <a href="#" className="hover:text-cyan-400 transition-colors">
-                        Linkedin
-                    </a>
-
-                </div>
 
                 <div className="flex gap-4">
                     <a 
@@ -37,11 +24,38 @@ export function Hero () {
                     </a>
                     <a 
                     href="#"
-                    className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors" 
+                    className="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors" 
                     >
                     Descargar CV
                     </a>
                 </div>
+
+                <div className='flex gap-6 align-items'>
+                                <a 
+                                href="https://github.com/AridaneDev"
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='text-white hover:text-cyan-400 transition-colors'
+                                >
+                                <FaGithub size={24} />
+                                </a>
+                                <a 
+                                href="https://www.linkedin.com/in/aridanegarcialopez/"
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='text-white hover:text-cyan-400 transition-colors'
+                                >
+                                <FaLinkedin size={24} />
+                                </a>
+                                <a 
+                                href="https://wa.me/34637148437"
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='text-white hover:text-cyan-400 transition-colors'
+                                >
+                                <FaWhatsapp size={24} />
+                                </a>
+                            </div>
                 </div>
 
                 <div className="flex justify-center">
