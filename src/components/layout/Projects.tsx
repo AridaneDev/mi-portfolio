@@ -3,7 +3,7 @@ import portfolio from "../../assets/portfolio.png";
 
 export function Projects() {
     return (
-        <section className="min-h-screen bg-gray-100 py-20 px-4">
+        <section id="proyectos" className="min-h-screen bg-gray-100 py-20 px-4">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Proyectos</h2>
 

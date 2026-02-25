@@ -1,10 +1,11 @@
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import fotoPerfil from '../../assets/foto-perfil.png'
+import CV from '../../assets/CV-Aridane-García.pdf'
 
 export function Hero () {
     return (
-        <section className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-teal-900 flex items-center justify-center px4">
-            <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <section id="inicio" className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-teal-900 flex items-center justify-center px-4 pt-24">
+            <div className="max-w-6xl mx-auto flex flex-col-reverse md:grid-cols-2 gap-12 items-center">
                 <div className="text-white space-y-9">
                 <div>
                     <h1 className="text-5xl md:text-6xl font-bold">
@@ -23,7 +24,8 @@ export function Hero () {
                     Ver Proyectos
                     </a>
                     <a 
-                    href="#"
+                    href={CV}
+                    download="CV-Aridane-García.pdf"
                     className="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors" 
                     >
                     Descargar CV
