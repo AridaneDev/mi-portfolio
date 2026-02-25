@@ -5,14 +5,14 @@ import CV from '../../assets/CV-Aridane-García.pdf'
 export function Hero () {
     return (
         <section id="inicio" className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-teal-900 flex items-center justify-center px-4 pt-24">
-            <div className="max-w-6xl mx-auto flex flex-col-reverse md:grid-cols-2 gap-12 items-center">
-                <div className="text-white space-y-9">
+            <div className="max-w-6xl mx-auto flex flex-col-reverse md:grid md:grid-cols-2 gap-12 items-center">
+                <div className="text-white flex flex-col items-center text-center md:text-left md:items-start space-y-9">
                 <div>
-                    <h1 className="text-5xl md:text-6xl font-bold">
+                    <h1 className="text-4xl md:text-6xl font-bold">
                         Hola, mi nombre es <span className="text-cyan-400">Aridane García</span>
                     </h1>
                 </div>
-                <p className="text-2xl text-gray-300">
+                <p className="text-xl md:text-2xl text-gray-300">
                    Soy un desarrollador de software que actualmente reside en las Islas Canarias, España.
                 </p>
 
@@ -32,7 +32,7 @@ export function Hero () {
                     </a>
                 </div>
 
-                <div className='flex gap-6 align-items'>
+                <div className='flex gap-6 align-items p-6'>
                                 <a 
                                 href="https://github.com/AridaneDev"
                                 target='_blank'

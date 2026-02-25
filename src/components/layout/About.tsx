@@ -4,19 +4,20 @@ export function About() {
         <section id="sobre-mi" className="py-24 px-4 bg-white">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-4xl font-bold text-center mb-16 text-gray-800">Sobre Mí</h2>
-                <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
                         <p className="text-lg text-gray-900 leading-relaxed">
-                            Siempre amé este mundo de la tecnología. Me apasiona crear y ser creativo, 
-              dar soluciones reales a problemas reales.
+                            Mi nombre es Aridane García, soy un desarrollador web radicado en Gran Canaria, España.
+
                         </p>
                         <p className="text-lg text-gray-900 leading-relaxed">
-              Actualmente estoy terminando el ciclo de Desarrollo de Aplicaciones Web (DAW) 
-              y en búsqueda de prácticas donde pueda seguir aprendiendo y aportando valor.
+              Actualmente estoy terminando el ciclo superior de <span className="font-semibold text-purple-600">
+                Desarrollo de Aplicaciones Web (DAW)</span> y en búsqueda de prácticas donde pueda seguir aprendiendo y aportando valor.
                         </p>
                         <p className="text-lg text-gray-900 leading-relaxed">
-                            Enfocado en <span className="font-semibold text-purple-600">React, TypeScript y Tailwind CSS</span>, 
-              trabajando en crear interfaces modernas y experiencias de usuario intuitivas.
+                           Me considero una persona con una curiosidad insaciable por la tecnología y una gran capacidad de adaptación. 
+                           Disfruto enfrentándome a problemas complejos y buscando la forma más eficiente de resolverlos, siempre con el 
+                           compromiso de escribir código limpio y escalable que resuelva los problemas del cliente. 
                         </p>
                     </div>
             <div className="flex justify-center">
