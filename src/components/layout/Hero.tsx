@@ -74,8 +74,12 @@ export function Hero() {
         <motion.div
           className="flex justify-center"
           initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          animate={{ opacity: 1, x: 0, y: [0, -10, 0] }}
+          transition={{
+            opacity: { duration: 0.8, delay: 0.2 },
+            x: { duration: 0.8, delay: 0.2 },
+            y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 },
+          }}
         >
           <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-cyan-400 to-purple-500 p-1 ">
             <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center text-6xl">
