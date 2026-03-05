@@ -18,7 +18,7 @@ export function ProyectCard({
   enDesarrollo,
 }: ProyectCardProps) {
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow relative">
+    <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-purple-500 hover:-translate-y-2 transition-all duration-300 relative">
       {enDesarrollo && (
         <span className="absolute top-4 right-4 bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-1 rounded-full">
           En desarrollo

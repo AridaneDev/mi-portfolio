@@ -1,16 +1,29 @@
 import { ProyectCard } from "../ui/ProjectCard";
 import portfolio from "../../assets/portfolio.png";
 import dashboard from "../../assets/dashboard.png";
+import { motion } from "framer-motion";
 
 export function Projects() {
   return (
     <section id="proyectos" className="min-h-screen bg-gray-100 py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+        <motion.h2
+          className="text-4xl font-bold text-center mb-12 text-gray-800"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
           Proyectos
-        </h2>
+        </motion.h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div
+          className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-3xl mx-auto"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           <ProyectCard
             titulo="Mi Portfolio Personal"
             descripcion="Portfolio personal creado con React, TypeScript y Tailwind CSS."
@@ -29,17 +42,7 @@ export function Projects() {
             linkCodigo="#"
             enDesarrollo
           />
-
-          <ProyectCard
-            titulo="Task Management App"
-            descripcion="Aplicación de gestión de proyectos estilo Trello con drag & drop y colaboración en tiempo real."
-            imagen="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop"
-            tecnologias={["React", "TypeScript", "Tailwind", "Supabase"]}
-            linkDemo="#"
-            linkCodigo="#"
-            enDesarrollo
-          />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

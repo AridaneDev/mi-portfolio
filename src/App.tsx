@@ -7,14 +7,14 @@ import { Footer } from './components/layout/Footer'
 
 function App() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Header/>
       <Hero/>
       <Projects/>
       <About />
       <CTA />
       <Footer />
-    </>
+    </div>
   )
 }
 

@@ -12,15 +12,28 @@ import {
   SiNodedotjs,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
+import { motion } from "framer-motion";
 export function About() {
   return (
     <section id="sobre-mi" className="py-24 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16 text-gray-800">
+        <motion.h2
+          className="text-4xl font-bold text-center mb-16 text-gray-800"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
           Sobre Mí
-        </h2>
+        </motion.h2>
         <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+          <motion.div
+            className="space-y-6"
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+          >
             <p className="text-lg text-gray-900 leading-relaxed">
               Mi nombre es Aridane García, soy un desarrollador web radicado en
               Gran Canaria, España.
@@ -40,8 +53,14 @@ export function About() {
               eficiente de resolverlos, siempre con el compromiso de escribir
               código limpio y escalable que resuelva los problemas del cliente.
             </p>
-          </div>
-          <div className="flex justify-center">
+          </motion.div>
+          <motion.div
+            className="flex justify-center"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-cyan-400 to-purple-500 p-1 ">
               <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center text-6xl">
                 <img
@@ -51,9 +70,15 @@ export function About() {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className="space-y-5 mt-28">
+        <motion.div
+          className="space-y-5 mt-28"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
           <h3 className="text-3xl font-bold text-gray-800 text-center">
             My Skills
           </h3>
@@ -86,7 +111,7 @@ export function About() {
           </div>
 
           <div>
-            <p className="text-lg font-semibold text-gray-700 mb-2 text-center">
+            <p className="text-xl font-semibold text-gray-700 mb-2 text-center">
               Base de datos & Herramientas
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-4xl">
@@ -94,7 +119,7 @@ export function About() {
               <SiGit className="text-orange-600" title="Git" />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
