@@ -16,8 +16,8 @@ export function Projects() {
             descripcion="Portfolio personal creado con React, TypeScript y Tailwind CSS."
             imagen={portfolio}
             tecnologias={["React", "TypeScript", "Tailwind"]}
-            linkDemo="#"
-            linkCodigo="#"
+            linkDemo="https://aridanegarcia.vercel.app/"
+            linkCodigo="https://github.com/AridaneDev/mi-portfolio"
           />
 
           <ProyectCard
