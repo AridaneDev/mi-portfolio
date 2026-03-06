@@ -18,13 +18,14 @@ export function Hero() {
         >
           <div>
             <h1 className="text-4xl md:text-6xl font-bold">
-              Hola, mi nombre es{" "}
+              Hola, soy <br />
               <span className="text-cyan-400">Aridane García</span>
             </h1>
           </div>
           <p className="text-xl md:text-2xl text-gray-300">
-            Soy un desarrollador de software que actualmente reside en las Islas
-            Canarias, España.
+            Desarrollador de software afincado en Canarias. Me especializo en
+            crear aplicaciones web que combinan una interfaz cuidada con un
+            código eficiente y escalable.
           </p>
 
           <div className="flex gap-4">
