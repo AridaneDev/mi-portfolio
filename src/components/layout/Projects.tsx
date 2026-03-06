@@ -35,7 +35,7 @@ export function Projects() {
           />
 
           <ProyectCard
-            titulo="Wheather App"
+            titulo="Weather App"
             descripcion="App del tiempo que consume la API de OpenWeatherMap. Muestra temperatura, sensación térmica, 
             humedad y viento con fondo dinámico según el clima."
             imagen={weatherApp}
