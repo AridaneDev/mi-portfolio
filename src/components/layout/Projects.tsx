@@ -1,6 +1,7 @@
 import { ProyectCard } from "../ui/ProjectCard";
 import portfolio from "../../assets/portfolio.png";
 import dashboard from "../../assets/dashboard.png";
+import weatherApp from "../../assets/weatherApp.png";
 import { motion } from "framer-motion";
 
 export function Projects() {
@@ -18,7 +19,7 @@ export function Projects() {
         </motion.h2>
 
         <motion.div
-          className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-3xl mx-auto"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
@@ -31,6 +32,16 @@ export function Projects() {
             tecnologias={["React", "TypeScript", "Tailwind"]}
             linkDemo="https://aridanegarcia.vercel.app/"
             linkCodigo="https://github.com/AridaneDev/mi-portfolio"
+          />
+
+          <ProyectCard
+            titulo="Wheather App"
+            descripcion="App del tiempo que consume la API de OpenWeatherMap. Muestra temperatura, sensación térmica, 
+            humedad y viento con fondo dinámico según el clima."
+            imagen={weatherApp}
+            tecnologias={["React", "TypeScript", "Tailwind"]}
+            linkDemo="https://weather-app-aridane.vercel.app/"
+            linkCodigo="https://github.com/AridaneDev/weather-app"
           />
 
           <ProyectCard
