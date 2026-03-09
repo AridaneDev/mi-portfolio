@@ -80,7 +80,7 @@ export function About() {
           viewport={{ once: true }}
         >
           <h3 className="text-3xl font-bold text-gray-800 text-center">
-            My Skills
+            Habilidades
           </h3>
           <div>
             <p className="text-xl font-semibold text-gray-700 mb-5 text-center">

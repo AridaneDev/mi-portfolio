@@ -38,7 +38,7 @@ export function ProyectCard({
             href={linkDemo}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+            className={`bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors ${enDesarrollo ? "pointer-events-none" : ""}`}
           >
             Demo
           </a>
@@ -48,7 +48,7 @@ export function ProyectCard({
             href={linkCodigo}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gray-700 hover:bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+            className={`bg-gray-700 hover:bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors ${enDesarrollo ? "pointer-events-none" : ""}`}
           >
             Código
           </a>

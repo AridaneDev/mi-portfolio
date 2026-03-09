@@ -1,6 +1,14 @@
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import { useActiveSection } from "../../hooks/useActiveSection";
+
+const navLinks = [
+  { href: "#inicio", label: "Inicio", id: "inicio" },
+  { href: "#proyectos", label: "Proyectos", id: "proyectos" },
+  { href: "#sobre-mi", label: "Sobre Mí", id: "sobre-mi" },
+  { href: "#contacto", label: "Contacto", id: "contacto" },
+];
+
 export function Header() {
   const activeSection = useActiveSection();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,103 +28,46 @@ export function Header() {
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden text-white text-3xl"
+          aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
         >
           {isMenuOpen ? <HiX /> : <HiMenu />}
         </button>
+
         {isMenuOpen && (
           <div
-            className="absolute top-full left-0 w-full bg-gradient-to-r from-purple-900/95 to-slate-900/95 
+            className="absolute top-full left-0 w-full bg-gradient-to-r from-purple-900/95 to-slate-900/95
           backdrop-blur-md md:hidden shadow-lg border-t border-gray-700"
           >
             <ul className="flex flex-col">
-              <li>
-                <a
-                  href="#inicio"
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`block px-6 py-4 transition-colors ${
-                    activeSection === "inicio" ? "text-cyan-400" : "text-white"
-                  }`}
-                >
-                  Inicio
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#proyectos"
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`block px-6 py-4 transition-colors ${
-                    activeSection === "proyectos"
-                      ? "text-cyan-400"
-                      : "text-white"
-                  }`}
-                >
-                  Proyectos
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#sobre-mi"
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`block px-6 py-4 transition-colors ${
-                    activeSection === "sobre-mi"
-                      ? "text-cyan-400"
-                      : "text-white"
-                  }`}
-                >
-                  Sobre Mí
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contacto"
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`block px-6 py-4 transition-colors ${
-                    activeSection === "contacto"
-                      ? "text-cyan-400"
-                      : "text-white"
-                  }`}
-                >
-                  Contacto
-                </a>
-              </li>
+              {navLinks.map(({ href, label, id }) => (
+                <li key={id}>
+                  <a
+                    href={href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`block px-6 py-4 transition-colors ${
+                      activeSection === id ? "text-cyan-400" : "text-white"
+                    }`}
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         )}
 
         <div className="hidden md:flex items-center gap-8">
           <ul className="flex gap-6">
-            <li>
-              <a
-                href="#inicio"
-                className={`hover:text-cyan-400 transition-colors ${activeSection === "inicio" ? "text-cyan-400" : "text-white"}`}
-              >
-                Inicio
-              </a>
-            </li>
-            <li>
-              <a
-                href="#proyectos"
-                className={`hover:text-cyan-400 transition-colors ${activeSection === "proyectos" ? "text-cyan-400" : "text-white"}`}
-              >
-                Proyectos
-              </a>
-            </li>
-            <li>
-              <a
-                href="#sobre-mi"
-                className={`hover:text-cyan-400 transition-colors ${activeSection === "sobre-mi" ? "text-cyan-400" : "text-white"}`}
-              >
-                Sobre Mí
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contacto"
-                className={`hover:text-cyan-400 transition-colors ${activeSection === "contacto" ? "text-cyan-400" : "text-white"}`}
-              >
-                Contacto
-              </a>
-            </li>
+            {navLinks.map(({ href, label, id }) => (
+              <li key={id}>
+                <a
+                  href={href}
+                  className={`hover:text-cyan-400 transition-colors ${activeSection === id ? "text-cyan-400" : "text-white"}`}
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </nav>

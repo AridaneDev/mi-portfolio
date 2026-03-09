@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import fotoPerfil from "../../assets/foto-perfil.png";
 import CV from "../../assets/CV-Aridane-García.pdf";
 import { motion } from "framer-motion";
@@ -62,12 +62,11 @@ export function Hero() {
               <FaLinkedin size={24} />
             </a>
             <a
-              href="https://wa.me/34637148437"
-              target="_blank"
+              href="mailto:aridane.garcia@proton.me"
               rel="noopener noreferrer"
               className="text-white hover:text-cyan-400 transition-colors"
             >
-              <FaWhatsapp size={24} />
+              <FaEnvelope size={24} />
             </a>
           </div>
         </motion.div>
